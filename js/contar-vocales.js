@@ -4,7 +4,7 @@
 
 /** Quita acentos y pasa a minúsculas para que "á" cuente como "a" */
 function quitarAcentos(texto) {
-  return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return texto.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "");
 }
 
 /**

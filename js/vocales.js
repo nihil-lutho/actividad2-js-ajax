@@ -6,7 +6,7 @@ const VOCALES = ["a", "e", "i", "o", "u"];
 
 /** Quita acentos y pasa a minúsculas: "Murciélago" -> "murcielago" */
 function quitarAcentos(texto) {
-  return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return texto.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "");
 }
 
 /**

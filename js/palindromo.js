@@ -12,7 +12,7 @@ function normalizar(texto) {
   return texto
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")   // quita las marcas de acento
+    .replace(/\p{M}/gu, "")   // quita las marcas de acento
     .replace(/[^a-z0-9ñ]/g, "");       // deja solo letras y números
 }
 
