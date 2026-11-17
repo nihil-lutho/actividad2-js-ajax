@@ -36,9 +36,9 @@ git init
 git add .
 git commit -m "Actividad 2: ejercicios JavaScript y AJAX"
 git branch -M main
-git remote add origin https://github.com/TU_USUARIO/actividad2-js-ajax.git
+git remote add origin https://github.com/nihil-lutho/actividad2-js-ajax.git
 git push -u origin main
 ```
 
 3. En GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: main / (root) → Save**.
-4. En uno o dos minutos la web queda en `https://TU_USUARIO.github.io/actividad2-js-ajax/`.
+4. En uno o dos minutos la web queda en `https://nihil-lutho.github.io/actividad2-js-ajax/`.
