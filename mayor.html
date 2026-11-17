@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2 · Número mayor</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Ejercicio 2: Número mayor</h1>
+    <p>JavaScript</p>
+  </header>
+  <nav class="volver"><a href="index.html">← Volver al menú</a></nav>
+
+  <main>
+    <section class="tarjeta">
+      <div class="enunciado">2. Escribe un programa que pida dos números y escriba en la pantalla cuál es el mayor.</div>
+
+      <div class="fila">
+        <div>
+          <label for="numero1">Primer número:</label>
+          <input type="number" id="numero1" placeholder="Ej: 25" step="any">
+        </div>
+        <div>
+          <label for="numero2">Segundo número:</label>
+          <input type="number" id="numero2" placeholder="Ej: 40" step="any">
+        </div>
+      </div>
+      <button class="boton ancho" id="btnComparar">Comparar</button>
+
+      <div id="resultado" class="resultado" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="js/mayor.js"></script>
+</body>
+</html>

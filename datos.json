@@ -1,0 +1,11 @@
+{
+  "asignatura": "Desarrollo de Aplicaciones en Red",
+  "actividad": "Laboratorio 2: Tecnologías JavaScript y AJAX",
+  "ejercicios": [
+    { "numero": 1, "nombre": "Palíndromo", "tecnologia": "JavaScript" },
+    { "numero": 2, "nombre": "Número mayor", "tecnologia": "JavaScript" },
+    { "numero": 3, "nombre": "Vocales de una frase", "tecnologia": "JavaScript" },
+    { "numero": 4, "nombre": "Contar vocales", "tecnologia": "JavaScript" },
+    { "numero": 5, "nombre": "Mostrar contenidos de una URL", "tecnologia": "AJAX (XMLHttpRequest)" }
+  ]
+}

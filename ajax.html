@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio AJAX · Mostrar contenidos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Ejercicio AJAX: Mostrar contenidos de una URL</h1>
+    <p>Peticiones asíncronas con XMLHttpRequest</p>
+  </header>
+  <nav class="volver"><a href="index.html">← Volver al menú</a></nav>
+
+  <main>
+    <section class="tarjeta">
+      <div class="enunciado">
+        AJAX. Al cargar la página el cuadro de texto muestra la URL de la propia página. Al pulsar
+        <strong>Mostrar Contenidos</strong> se descarga mediante AJAX el contenido de la URL y se muestran:
+        los contenidos del archivo, los estados de la petición, las cabeceras HTTP y el código de estado.
+      </div>
+
+      <label for="url">URL a descargar:</label>
+      <input type="url" id="url" placeholder="https://..." autocomplete="off">
+      <button class="boton ancho" id="btnMostrar">Mostrar Contenidos</button>
+
+      <p class="ejemplos">
+        URLs de prueba:
+        <button type="button" data-url="propia">URL de esta página</button>
+        <button type="button" data-url="datos.json">datos.json (archivo del sitio)</button>
+        <button type="button" data-url="no-existe.html">no-existe.html (error 404)</button>
+        <button type="button" data-url="https://jsonplaceholder.typicode.com/posts/1">API externa (JSON)</button>
+      </p>
+    </section>
+
+    <section class="zonas">
+      <div class="zona">
+        <h3>Estados de la petición</h3>
+        <div id="estado" class="estado-actual">No iniciada (readyState 0)</div>
+        <ul id="historial" class="historial"></ul>
+      </div>
+
+      <div class="zona">
+        <h3>Código de estado</h3>
+        <div id="codigo" class="codigo-estado">—</div>
+        <p id="codigoTexto" class="ejemplos" style="margin-top:8px"></p>
+      </div>
+
+      <div class="zona ancha">
+        <h3>Cabeceras HTTP de la respuesta del servidor</h3>
+        <div id="cabeceras"><em>Sin datos todavía.</em></div>
+      </div>
+
+      <div class="zona ancha">
+        <h3>Contenidos del archivo</h3>
+        <pre id="contenido" class="salida">Sin datos todavía.</pre>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/ajax.js"></script>
+</body>
+</html>
